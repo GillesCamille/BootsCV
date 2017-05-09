@@ -40,13 +40,14 @@
                 <div class="row">
                     <div class="col-md-3">
                         <script>
-                            function affichenumero (numero) 
-		{
-			var tel = document.getElementById("tel");
-			tel.innerHTML = numero ;
-		}
-                        <p><b>tél</b>: 0675452241</p>
+                            function affichenumero (){  
+                            // console.log("Click Here)
+                            
+			                var tel = document.querySelector(".telMask");
+			                tel.innerHTML = "06 12 34 56 78" ;
+                            }
                         </script>
+                        <p><b>tél</b>: <span class="telMask" onclick="affichenumero()">Click to display</span></p>
                     </div>
                     <div class="col-md-3">
                         <p><b>@ </b>: romaneab@gmail.com</p>
